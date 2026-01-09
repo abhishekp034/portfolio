@@ -1,0 +1,35 @@
+body{
+    font-family: Arial;
+    padding-top: 80px;
+}
+
+.hero{
+    background: #0d6efd;
+    color: white;
+    padding: 70px 0;
+}
+
+section{
+    scroll-margin-top: 90px;
+}
+
+/* Animation */
+.reveal{
+    opacity: 50;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    opacity: 25;
+    transform: translateY(0);
+}
+
+.animate{
+    animation: zoom 1.5s;
+}
+
+@keyframes zoom{
+    from { transform: scale(0.7); }
+    to   { transform: scale(1); }
+}
